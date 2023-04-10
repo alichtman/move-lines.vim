@@ -14,10 +14,10 @@ let g:move_lines_plugin = 1
 " Move lines above or below with ALT + [j/k].
 " https://vimtricks.substack.com/p/vimtrick-moving-lines
 nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " vim: et ts=4 sw=4 sts=4
